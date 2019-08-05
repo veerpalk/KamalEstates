@@ -156,13 +156,14 @@ h6 {
   letter-spacing: 3px;
 }
 
-#header #logo h1 a,
-#header #logo h1 a:hover {
+#header #logo h1 a{
   color: #fff;
-  padding-left: 10px;
-  border-left: 4px solid #18d26e;
+  border-bottom: 4px solid #18d26e;
 }
-
+#header #logo h1 a:hover {
+  color:  #18d26e;
+  border-bottom: 4px solid #fff;
+}
 #header #logo img {
   padding: 0;
   margin: 0;
