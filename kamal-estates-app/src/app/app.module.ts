@@ -2,9 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-<<<<<<< HEAD
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-=======
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
@@ -31,7 +29,6 @@ const appRoutes: Routes = [
 ];
 
 
->>>>>>> 48ee12e7c207e53564aa109e9391fddb4b8c099b
 
 @NgModule({
   declarations: [
@@ -48,14 +45,11 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-<<<<<<< HEAD
-    BrowserAnimationsModule
-=======
+    BrowserAnimationsModule,
     RouterModule.forRoot(
       appRoutes,{ enableTracing: true } // <-- debugging purposes only
         )
  
->>>>>>> 48ee12e7c207e53564aa109e9391fddb4b8c099b
   ],
   providers: [],
   bootstrap: [AppComponent]

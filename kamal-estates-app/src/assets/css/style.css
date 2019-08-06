@@ -786,23 +786,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Call To Action Section
 --------------------------------*/
 
-#call-to-action {
+#renting-property {
   background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/call-to-action-bg.jpg) fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
 
-#call-to-action h3 {
+#renting-property h3 {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
 }
 
-#call-to-action p {
+#renting-property p {
   color: #fff;
 }
 
-#call-to-action .cta-btn {
+#renting-property .cta-btn {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -817,7 +817,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#call-to-action .cta-btn:hover {
+#renting-property .cta-btn:hover {
   background: #18d26e;
   border: 2px solid #18d26e;
 }
