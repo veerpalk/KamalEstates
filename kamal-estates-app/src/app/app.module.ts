@@ -12,6 +12,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NavbarHeaderComponent } from './common/navbar-header/navbar-header.component';
 import { NavbarFooterComponent } from './common/navbar-footer/navbar-footer.component';
+import { AgmCoreModule } from '@agm/core';
+import { QueryComponent } from './common/query/query.component';
+import { TopTenPropertiesComponent } from './top-ten-properties/top-ten-properties.component';
+import { PropertySearchComponent } from './common/property-search/property-search.component'; 
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -40,13 +44,21 @@ const appRoutes: Routes = [
     RentingPropertyComponent,
     PageNotFoundComponent,
     NavbarHeaderComponent,
-    NavbarFooterComponent
+    NavbarFooterComponent,
+    QueryComponent,
+    TopTenPropertiesComponent,
+    PropertySearchComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
       appRoutes,{ enableTracing: true } // <-- debugging purposes only
-        )
+        ),
+
+        AgmCoreModule.forRoot({
+          apiKey: 'AIzaSyB-sU_jyyipmz04fwYYcvH7sFws-oRCaw4'
+        }),
+
  
   ],
   providers: [],
