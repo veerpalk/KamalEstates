@@ -1,11 +1,66 @@
-<p>
-  property-search works!
-</p>
-<lable>Type</lable>
-<lable>SubType</lable>
-<lable>SubType</lable>
-<lable>Location</lable>
-<lable>Sector</lable>
-<lable>Price</lable>
-<lable>Size</lable>
+
+<m style="margin-left: 5px">
+  <div class="m-group">
+    <label class="lbl"> Type</label>
+    <select>
+      <option *ng="let type of propertySearchTypes"> 
+          {{ type}}
+      </option>
+    </select>
+  </div>
+
+  <div class="m-group">
+    <label class="lbl">Subtype</label>
+    <select>
+      <option *ng="let subtype of propertySearchSubtypeTypes"> 
+          {{ subtype}}
+      </option>
+    </select>
+  </div>
+
+  <div class="m-group">
+    <label class="lbl">Location</label>
+    <select>
+      <option *ng="let location of propertySearchLocations"> 
+          {{ subtype}}
+      </option>
+    </select>
+  </div>
+  <div class="m-group">
+    <label class="lbl">Sector</label>
+    <select>
+      <option *ng="let sector of propertySearchSubtypeSectors"> 
+          {{ subtype}}
+      </option>
+    </select>
+  </div>
+
+  <div class="m-group">
+    <label class="lbl">Price</label>
+    <input type="text" class="m-control">
+    <label class="lbl" >To</label>
+    <input type="text" class="m-control" >
+    <select>
+      <option *ng="let pricetype of propertySearchPriceType"> 
+          {{ pricetype}}
+      </option>
+    </select>
+  </div>
+
+  <div class="m-group">
+    <label class="lbl">Size</label>
+    <input type="text" class="m-control" >
+    <label class="lbl">To</label>
+    <input type="text" class="m-control" >
+    <select>
+      <option *ng="let size of propertySearchSizeType"> 
+          {{ size}}
+      </option>
+    </select>
+  </div>
+
+
+<button class="btn1 btn-primary" >SUBMIT</button>
+
+</m>
 
