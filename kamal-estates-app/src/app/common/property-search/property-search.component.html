@@ -1,9 +1,9 @@
 
-<m style="margin-left: 5px">
+<Div style="margin-left: 5px">
   <div class="m-group">
     <label class="lbl"> Type</label>
     <select>
-      <option *ng="let type of propertySearchTypes"> 
+      <option *ngFor="let type of propertySearchTypes"> 
           {{ type}}
       </option>
     </select>
@@ -12,7 +12,7 @@
   <div class="m-group">
     <label class="lbl">Subtype</label>
     <select>
-      <option *ng="let subtype of propertySearchSubtypeTypes"> 
+      <option *ngFor="let subtype of propertySearchSubtypeTypes"> 
           {{ subtype}}
       </option>
     </select>
@@ -21,7 +21,7 @@
   <div class="m-group">
     <label class="lbl">Location</label>
     <select>
-      <option *ng="let location of propertySearchLocations"> 
+      <option *ngFor="let location of propertySearchLocations"> 
           {{ subtype}}
       </option>
     </select>
@@ -29,7 +29,7 @@
   <div class="m-group">
     <label class="lbl">Sector</label>
     <select>
-      <option *ng="let sector of propertySearchSubtypeSectors"> 
+      <option *ngFor="let sector of propertySearchSubtypeSectors"> 
           {{ subtype}}
       </option>
     </select>
@@ -41,7 +41,7 @@
     <label class="lbl" >To</label>
     <input type="text" class="m-control" >
     <select>
-      <option *ng="let pricetype of propertySearchPriceType"> 
+      <option *ngFor="let pricetype of propertySearchPriceType"> 
           {{ pricetype}}
       </option>
     </select>
@@ -53,7 +53,7 @@
     <label class="lbl">To</label>
     <input type="text" class="m-control" >
     <select>
-      <option *ng="let size of propertySearchSizeType"> 
+      <option *ngFor="let size of propertySearchSizeType"> 
           {{ size}}
       </option>
     </select>
@@ -62,5 +62,5 @@
 
 <button class="btn1 btn-primary" >SUBMIT</button>
 
-</m>
+</Div>
 
