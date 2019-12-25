@@ -13,6 +13,17 @@
                 <li data-filter=".filter-app">Buying </li>
                 <li data-filter=".filter-card">Renting </li>
                 <li data-filter=".filter-web">Selling </li>
+                <li >
+                  <mat-label>Location</mat-label>
+                  <mat-select multiple>
+                    <mat-option [value]="" *ngFor="let location of propertySearchLocations"> 
+                        {{ subtype}}
+                    </mat-option>
+                    </mat-select>
+                </li>
+                <!--<li >
+                 <igx-slider id="slider" [type]="sliderType.RANGE" [minValue]="0" [maxValue]="1000" [lowerBound]="100" [upperBound]="900" [(ngModel)]="priceRange"></igx-slider>
+                </li > -->
               </ul>
             </div>
           </div>

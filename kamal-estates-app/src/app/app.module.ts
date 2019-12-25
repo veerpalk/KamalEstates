@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+//import { MatButtonModule, MatCheckboxModule ,MatFormFieldModule,MatRadioModule,MatInputModule, MatSelectModule} from '@angular/material';
+
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,6 +19,10 @@ import { AgmCoreModule } from '@agm/core';
 import { QueryComponent } from './common/query/query.component';
 import { TopTenPropertiesComponent } from './top-ten-properties/top-ten-properties.component';
 import { PropertySearchComponent } from './common/property-search/property-search.component'; 
+// import { 
+// 	IgxInputGroupModule,
+// 	IgxSliderModule
+//  } from "igniteui-angular";
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -48,6 +54,15 @@ const appRoutes: Routes = [
     NavbarFooterComponent,
     QueryComponent,
     TopTenPropertiesComponent,
+    // MatButtonModule,
+    // MatCheckboxModule,
+    // MatFormFieldModule,
+    // MatInputModule,
+    // MatRadioModule,
+    // MatSelectModule,
+    BrowserAnimationsModule ,
+    // IgxInputGroupModule,
+	  // IgxSliderModule,
     PropertySearchComponent
   ],
   imports: [

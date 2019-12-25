@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Property } from '../models/Property';
+//import { SliderType } from "igniteui-angular";
 
 @Component({
   selector: 'app-top-ten-properties',
@@ -7,9 +8,9 @@ import { Property } from '../models/Property';
   styleUrls: ['./top-ten-properties.component.css']
 })
 export class TopTenPropertiesComponent implements OnInit {
-
+  //public sliderType = SliderType;
   properties:Property[]= [];
-
+  propertySearchLocations=[];
   
 
   constructor() {
@@ -36,7 +37,7 @@ export class TopTenPropertiesComponent implements OnInit {
     this.properties.push(property8);
     this.properties.push(property9);
     this.properties.push(property10);
-
+    this.propertySearchLocations=['All','Chandigarh','Mohali','Panchkula','kharar','zirakpur','derabassi','landran'];
    }
 
   ngOnInit() {

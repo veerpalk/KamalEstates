@@ -802,7 +802,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#renting-property .cta-btn {
+ .cta-btn {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -816,10 +816,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #fff;
   color: #fff;
 }
-
-#renting-property .cta-btn:hover {
+#btnProperties {
+  background: #000;
+}
+#btnProperties:hover {
+  background: #18d26e;
+}
+.cta-btn:hover {
   background: #18d26e;
   border: 2px solid #18d26e;
+  color: rgb(0, 0, 0);
 }
 
 /* Call To Action Section

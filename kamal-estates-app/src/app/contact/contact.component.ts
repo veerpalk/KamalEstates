@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewChild } from '@angular/core';
-import { } from '@types/googlemaps';
-
+//import { } from 'googlemaps';
 
 @Component({
   selector: 'app-contact',
@@ -10,11 +9,11 @@ import { } from '@types/googlemaps';
 })
 export class ContactComponent implements OnInit {
 
- // @ViewChild('gmap') gmapElement: any;
- // map: google.maps.Map;
+  //@ViewChild('gmap') gmapElement: any;
+  //map: google.maps.Map;
  constructor() { }
 
-  public map: any = { lat: 30.734909, lng: 76.755852 };
+  //public map: any = { lat: 30.734909, lng: 76.755852 };
   markers = [
     { lat: 30.734909, lng: 76.755852 }
     ];

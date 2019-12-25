@@ -1,62 +1,62 @@
 
 <Div style="margin-left: 5px">
-  <div class="m-group">
-    <label class="lbl"> Type</label>
-    <select>
-      <option *ngFor="let type of propertySearchTypes"> 
+  <div >
+    <mat-label> Type</mat-label>
+    <mat-select multiple>
+      <mat-option [value]="" *ngFor="let type of propertySearchTypes"> 
           {{ type}}
-      </option>
-    </select>
+      </mat-option>
+      </mat-select>
   </div>
 
-  <div class="m-group">
-    <label class="lbl">Subtype</label>
-    <select>
-      <option *ngFor="let subtype of propertySearchSubtypeTypes"> 
+  <div >
+    <mat-label>Subtype</mat-label>
+    <mat-select multiple>
+      <mat-option [value]="" *ngFor="let subtype of propertySearchSubtypeTypes"> 
           {{ subtype}}
-      </option>
-    </select>
+      </mat-option>
+      </mat-select>
   </div>
 
-  <div class="m-group">
-    <label class="lbl">Location</label>
-    <select>
-      <option *ngFor="let location of propertySearchLocations"> 
+  <div >
+    <mat-label>Location</mat-label>
+    <mat-select multiple>
+      <mat-option [value]="" *ngFor="let location of propertySearchLocations"> 
           {{ subtype}}
-      </option>
-    </select>
+      </mat-option>
+      </mat-select>
   </div>
-  <div class="m-group">
-    <label class="lbl">Sector</label>
-    <select>
-      <option *ngFor="let sector of propertySearchSubtypeSectors"> 
+  <div >
+    <mat-label>Sector</mat-label>
+    <mat-select multiple>
+      <mat-option [value]="" *ngFor="let sector of propertySearchSubtypeSectors"> 
           {{ subtype}}
-      </option>
-    </select>
+      </mat-option>
+      </mat-select>
   </div>
 
-  <div class="m-group">
-    <label class="lbl">Price</label>
+  <div >
+    <mat-label>Price</mat-label>
     <input type="text" class="m-control">
-    <label class="lbl" >To</label>
+    <mat-label >To</mat-label>
     <input type="text" class="m-control" >
-    <select>
-      <option *ngFor="let pricetype of propertySearchPriceType"> 
+    <mat-select multiple>
+      <mat-option [value]="" *ngFor="let pricetype of propertySearchPriceType"> 
           {{ pricetype}}
-      </option>
-    </select>
+      </mat-option>
+      </mat-select>
   </div>
 
-  <div class="m-group">
-    <label class="lbl">Size</label>
+  <div >
+    <mat-label>Size</mat-label>
     <input type="text" class="m-control" >
-    <label class="lbl">To</label>
+    <mat-label>To</mat-label>
     <input type="text" class="m-control" >
-    <select>
-      <option *ngFor="let size of propertySearchSizeType"> 
+    <mat-select multiple>
+      <mat-option [value]="" *ngFor="let size of propertySearchSizeType"> 
           {{ size}}
-      </option>
-    </select>
+      </mat-option>
+      </mat-select>
   </div>
 
 
